@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_friend</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Create Friend</h1>
+        <form method="POST">
+            {% csrf_token %}
+            
+            <table cellspacing="5px" cellpadding="10px">
+                <tr>
+                    <th><label for="fn">Friend Name</label></th>
+                    <th><input type="text" name="fn" id="fn"></th>
+                </tr>
+
+                <tr>
+                    <th><label for="fnum">Friend Ph.No</label></th>
+                    <th><input type="text" name="fnum" id="fnum"></th>
+                </tr>
+
+                <tr>
+                    <th><label for="fm">Friend Mail</label></th>
+                    <th><input type="mail" name="fm" id="fm"></th>
+                </tr>
+
+                <tr>
+                    <th><label for="fl">Friend Location</label></th>
+                    <th><input type="text" name="fl" id="fl"></th>
+                </tr>
+
+            </table>
+
+                <tr>
+                    <input type="submit" value="Create_details">
+                </tr>
+            
+        </form>
+    </center>   
+</body>
+</html>

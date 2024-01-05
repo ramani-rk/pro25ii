@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Details</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Details of Friends</h1>
+        <table border="3px" cellspacing="10px" cellpadding="10px">
+            <tr>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Mail</th>
+                <th>Location</th>
+            </tr>
+
+            {% for de in details %}
+                <tr id="one">
+                    <td>{{de.fname}}</td>
+                    <td>{{de.fnum}}</td>
+                    <td>{{de.fmail}}</td>
+                    <td>{{de.floc}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
